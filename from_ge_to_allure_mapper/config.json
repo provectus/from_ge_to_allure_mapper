@@ -1,0 +1,6 @@
+{
+  "root_folder_ge": "test",
+  "allure_result": "reportsx",
+  "allure_report": "allure_report",
+  "default_suite": "test_suite"
+}

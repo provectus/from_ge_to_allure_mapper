@@ -1,0 +1,26 @@
+# Editors
+.vscode/
+.idea/
+
+# Mac/OSX
+.DS_Store
+allure-report/
+reportsx
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+env.sh
+
+
+# plugin
+*.pid
+*.db
+logs
+
+

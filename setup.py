@@ -11,7 +11,7 @@ setuptools.setup(
     description='Package for mapping test report format from Great Expectations to Allure',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/',
+    url='https://github.com/provectus/from_ge_to_allure_mapper',
     license='MIT',
     packages=['from_ge_to_allure_mapper'],
     install_requires=['great_expectations'],

@@ -12,7 +12,16 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/provectus/from_ge_to_allure_mapper',
+    download_url='https://github.com/provectus/from_ge_to_allure_mapper/archive/tags/publish.tar.gz',
+    keywords=['DATA_QA', 'GREAT_EXPECTATIONS', 'ALLURE'],
     license='MIT',
     packages=['from_ge_to_allure_mapper'],
     install_requires=['great_expectations'],
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Build Tools',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',
+    ],
 )

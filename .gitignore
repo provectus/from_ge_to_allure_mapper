@@ -23,4 +23,8 @@ env.sh
 *.db
 logs
 
+#pip
+dist
+from_ge_to_allure_mapper.egg-info
+
 

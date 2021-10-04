@@ -5,17 +5,17 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='from_ge_to_allure_mapper',
-    version='0.0.1.2',
+    version='0.0.1.4',
     author='Bogdan Volodarskiy',
     author_email='hesherus@gmail.com',
     description='Package for mapping test report format from Great Expectations to Allure',
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/provectus/from_ge_to_allure_mapper',
-    download_url='https://github.com/provectus/from_ge_to_allure_mapper/archive/refs/tags/v_01.2.tar.gz',
+    download_url='https://github.com/provectus/from_ge_to_allure_mapper/archive/refs/tags/v_01.4.tar.gz',
     keywords=['DATA_QA', 'GREAT_EXPECTATIONS', 'ALLURE'],
     license='MIT',
-    data_files=[('', ['config.json'])],
+    data_files=[('', ['from_ge_to_allure_mapper/config.json'])],
     packages=['from_ge_to_allure_mapper'],
     install_requires=['great_expectations'],
     classifiers=[

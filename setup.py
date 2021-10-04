@@ -15,7 +15,7 @@ setuptools.setup(
     download_url='https://github.com/provectus/from_ge_to_allure_mapper/archive/refs/tags/v_01.4.tar.gz',
     keywords=['DATA_QA', 'GREAT_EXPECTATIONS', 'ALLURE'],
     license='MIT',
-    data_files=[('', ['from_ge_to_allure_mapper/config.json'])],
+    data_files=[('../', ['from_ge_to_allure_mapper/config.json'])],
     packages=['from_ge_to_allure_mapper'],
     install_requires=['great_expectations'],
     classifiers=[

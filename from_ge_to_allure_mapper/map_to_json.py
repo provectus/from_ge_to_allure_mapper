@@ -97,7 +97,7 @@ def get_start_suit_time(file):
 
 
 def get_stop_suit_time():
-    return datetime.datetime.now().timestamp()
+    return datetime.now().timestamp()
 
 
 def parse_datetime(date_str):

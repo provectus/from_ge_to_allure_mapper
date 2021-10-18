@@ -17,7 +17,10 @@ setuptools.setup(
     license='MIT',
     data_files=[('../', ['from_ge_to_allure_mapper/config.json'])],
     packages=['from_ge_to_allure_mapper'],
-    install_requires=['great_expectations'],
+    install_requires=(
+        'great_expectations >= 0.13.37',
+        'fastparquet >= 0.7.1',
+        'pyarrow >= 5.0.0'),
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',

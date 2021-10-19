@@ -93,7 +93,7 @@ def get_severity(file):
 
 
 def get_start_suit_time(file):
-    return int(file['meta']['expectation_suite_meta']['BasicSuiteBuilderProfiler']['created_at'])
+    return parse_datetime(file['meta']['batch_markers']['ge_load_time'])
 
 
 def get_stop_suit_time():
@@ -105,7 +105,7 @@ def parse_datetime(date_str):
 
 
 def get_start_test_time(file):
-    return parse_datetime(file['meta']['batch_markers']['ge_load_time'])
+    return parse_datetime(file['meta']['run_id']['run_name'])
 
 
 def get_stop_test_time(file):
@@ -204,7 +204,7 @@ def create_suit_json(allure_result, allure_report, ge_root_dir, test_suite):
     os.makedirs(allure_result)
     file = get_json(ge_root_dir, test_suite)
     start_time = get_start_suit_time(file)
-    stop_time = get_stop_suit_time()
+    stop_time = get_stop_test_time(file)
     for i in file['results']:
         uuid = str(get_uuid(list(file['results']).index(i), allure_report))
         data = {

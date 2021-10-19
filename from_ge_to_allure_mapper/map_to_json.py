@@ -3,7 +3,6 @@ import os
 import sys
 from datetime import datetime
 import glob
-import great_expectations as ge
 from great_expectations.expectations.expectation import (
     ExpectationConfiguration,
 )

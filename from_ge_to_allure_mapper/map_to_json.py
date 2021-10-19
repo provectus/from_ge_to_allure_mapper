@@ -101,7 +101,7 @@ def get_stop_suit_time():
 
 
 def parse_datetime(date_str):
-    return datetime.timestamp(datetime.strptime(date_str, '%Y%m%dT%H%M%S.%fZ'))
+    return datetime.timestamp(datetime.strptime(date_str, '%Y%m%dT%H%M%S.%fZ'))*1000
 
 
 def get_start_test_time(file):

@@ -22,7 +22,7 @@ datasources:
     batch_kwargs_generators:
       subdir_reader:
         class_name: SubdirReaderBatchKwargsGenerator
-        base_directory: /Users/god/plugin/test/data
+        base_directory: /Users/god/ge_allure_mapper/test/data
     class_name: PandasDatasource
 
 # This config file supports variable substitution which enables: 1) keeping

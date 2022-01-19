@@ -107,8 +107,6 @@ def parse_datetime_run_name(date_str):
     date_str = date_str.replace("+00:00","Z")
     return datetime.timestamp(datetime.strptime(date_str, '%Y-%m-%dT%H:%M:%S.%fZ'))*1000
 
-
-
 def get_start_test_time(file):
     return parse_datetime_run_name(file['meta']['run_id']['run_time'])
 
@@ -119,7 +117,6 @@ def get_stop_test_time(file):
 
 def get_params(file):
     params = file['expectation_config']['kwargs']
-    # del params['result_format']
     result = []
     for param in params:
         result.append({"name": param, "value": str(params[param])}) if isinstance(params[param],

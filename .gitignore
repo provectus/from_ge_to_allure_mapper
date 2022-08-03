@@ -26,5 +26,5 @@ logs
 #pip
 dist
 from_ge_to_allure_mapper.egg-info
-from_ge_to_allure_mapper/__pycache__
+__pycache__
 
